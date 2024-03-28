@@ -192,7 +192,7 @@
 							<div class="w3l_banner_nav_right_banner">
 								<h3><span>Madeshwara Nursery Farm</span></h3>
 								<div class="more">
-									<a href="#">whatsapp now</a>
+									<a href="https://wa.me/c/918190051161">whatsapp now</a>
 								</div>
 							</div>
 						</li>
@@ -482,5 +482,33 @@ $(document).ready(function(){
 			});
 	</script>
 <!-- //here ends scrolling icon -->
+<div class="modal fade" id="welcomeDialog" tabindex="-1" role="dialog" aria-labelledby="welcomeDialogTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="welcomeDialogTitle">Welcome to Our Site!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Hi there! We're excited to have you on our site.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Okay</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Wait for the document to be fully loaded
+    document.addEventListener("DOMContentLoaded", function() {
+        // Show the welcome dialog automatically
+        $('#welcomeDialog').modal('show');
+    });
+</script>
+
 </body>
 </html>
