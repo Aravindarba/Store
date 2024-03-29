@@ -4858,3 +4858,47 @@ input.checkbox:checked:after {
     background-color: #2c2c2c;
 }
 
+/* Base styles for the WhatsApp button */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 60px;
+  right: 22px; /* Adjust this value to move the button to the right */
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+/* Styles for the WhatsApp button image */
+.whatsapp-float img {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+}
+
+/* Hover effect for the WhatsApp button */
+.whatsapp-float:hover {
+  background-color: #25d366;
+  color: #fff;
+}
+
+/* Responsive adjustments for smaller screens (e.g., phones) */
+@media screen and (max-width: 768px) {
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 15px;
+    font-size: 24px;
+  }
+  .whatsapp-float img {
+    width: 30px;
+    height: 30px;
+    margin-top: 8px;
+  }
+}
