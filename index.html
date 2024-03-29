@@ -112,16 +112,6 @@
 								</div>                  
 							</div>				
 						</li>
-					<li class="dropdown mega-dropdown active">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Samanthi 🌼 (சாமந்தி)<span class="caret"></span></a>				
-							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
-								<div class="w3ls_vegetables">
-									<ul>	
-										<li><a href="vegetables.html">Paper yellow variety</a></li>
-									</ul>
-								</div>                  
-							</div>				
-						</li>
 						<li class="dropdown mega-dropdown active">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Tomato 🍅 (தக்காளி)<span class="caret"></span></a>				
 							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
@@ -183,7 +173,7 @@
 					<ul class="slides">
 						<li>
 							<div class="w3l_banner_nav_right_banner">
-								<h3><span>Madeshwara<br>  <span>Nursery Farm</span></span></h3>
+								<h3><span>Madeshwara  <br><span>Nursery Farm</span></span></h3>
 							</div>
 						</li>
 						<li>
@@ -507,5 +497,13 @@ $(document).ready(function(){
     <!-- Include the JavaScript file -->
     <script type="text/javascript" src="floating-wpp.min.js"></script>
 	
+	<script type="text/javascript">
+	$('.mega-dropdown').click(function(){
+    $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(100); 
+});
+
+$('.mega-dropdown').mouseleave(function(){
+    $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(100);
+});</script>
 </body>
 </html>
